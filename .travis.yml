@@ -3,8 +3,8 @@ python:
   - "3.8"
   #command to install dependencies
 install:
-  - pip3 install pylint
   - pip3 install flask
+  - pip3 install pylint
 # command to run tests
 script:
   - pylint serveur.py
