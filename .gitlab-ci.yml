@@ -1,0 +1,12 @@
+build-job:
+  stage: build
+  script:
+    - echo "Hello, $GITLAB_USER_LOGIN!"
+    - pip3 install flask
+    - pip3 install pylint
+
+test-job:
+  stage: test
+  script:
+    - echo "This job tests something"
+    - pylint serveur.py
